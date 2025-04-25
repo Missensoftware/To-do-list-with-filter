@@ -1,0 +1,107 @@
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .list-header{
+        background:#04aa6d ; 
+        padding: 20px 50px;
+        margin: 70px auto 0px;
+        width: 50%;
+    }
+
+    .heading{
+        color: #fff; 
+        font-size: 30px;
+        text-align: center; 
+        font-family: 'Courier New', Courier, monospace; 
+        margin:20px 0; 
+    }
+
+    .list-header input{
+        padding: 0 10px;
+        width: 70%; height: 30px;
+        border: none;
+        margin: 0;
+        float: left;
+    }
+    .add-btn{
+        margin: 0;
+        border: none;
+        float: left;
+        padding: 7px 10px;
+        color: #555;
+        background: #ccc;
+        cursor: pointer;
+
+    &:hover{
+        background: #bbb;
+    }
+}  
+
+.list-contant{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 340px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 50%;
+}
+
+ul li{
+    position: relative;
+    padding: 10px 20px 10px 40px;
+    margin: 5px 0;
+    background: #eee;
+    list-style: none;
+    border-radius: 0;
+    cursor: pointer;
+    
+    
+    /* &:nth-child(odd) {
+        background: #f9f9f9;
+    } */
+
+    &:hover{
+        background: #ddd;
+        color: #000;
+    }
+}
+
+.checked{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+
+
+}
+
+.checked::before{
+    content: ' ';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #555;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.close:hover{
+    color: #f00;
+}
